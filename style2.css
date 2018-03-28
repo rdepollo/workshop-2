@@ -1,0 +1,89 @@
+.bigcontainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.column {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.row {
+  width: 100%;
+  height: 25%;
+  position: relative;
+  float: left;
+}
+
+/* DON'T DELETE THIS */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.bluestripe {
+  width: 1%;
+  height: 100%;
+  background-color: blue;
+  float: left;
+}
+
+.redstripe {
+  width: 1%;
+  height: 100%;
+  background-color: red;
+  float: left;
+}
+
+.whitestripe {
+  width: 1%;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+
+.yellowstripe {
+  width: 1%;
+  height: 100%;
+  background-color: yellow;
+  float: left;
+}
+
+@media screen and (max-width: 550px) and (min-width: 0px) {
+  .whitestripe {
+    background-color: black;
+  }
+  .row {
+    background-color: black;
+  }
+}
